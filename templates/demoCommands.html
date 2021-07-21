@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<title>Voice Assistant - Commands</title>
+</head>
+<style>
+	.btn {
+        transition: all ease-in-out 0.5s;
+    }
+</style>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc93c; color: white; ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="/static/GPN-LogoNew.png" width="60"
+					height="50">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="/"><button
+								class="btn btn-outline-primary">Home</button></a>
+					</li>
+
+					<li class="nav-item">
+						<form action="/command" method="POST">
+							<a class="nav-link active" href="/command"><button
+									class="btn btn-primary">Command</button></a>
+						</form>
+						<!--What Commands can be used ?-->
+					</li>
+
+					<li class="nav-item">
+						<form action="/aboutus" method="POST">
+							<a class="nav-link" href="/aboutus"><button class="btn btn-outline-primary">About
+									Us</button></a>
+						</form>
+						<!--Project Group Info-->
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div style="margin:10px 20px; cursor: default;">
+		<h2>Voice Commands</h2>
+		<ol class="list-group list-group-numbered">
+			<li class="list-group-item">How Are You ? </li>
+			<li class="list-group-item"><i>city-name</i> Weather eg. Delhi Weather</li>
+			<li class="list-group-item"><i>keyword</i> Wikipedia eg. Android OS Wikipedia</li>
+			<li class="list-group-item">Current Time</li>
+			<li class="list-group-item">Current Date</li>
+			<li class="list-group-item">Open Amazon / Spotify / YouTube / StackOverFlow eg. Open StackOverFlow</li>
+			<li class="list-group-item">Play Music</li>
+			<li class="list-group-item">Remember <i>task to remember later</i> 
+				eg. Remember that I have to test Voice Assistant</li>
+			<li class="list-group-item">Recoll the Remember Task</li>
+			<li class="list-group-item">Calculate <i>any mathematical operation</i> eg. Calculate 20+8</li>
+
+		  </ol>
+	</div>
+	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+	crossorigin="anonymous"></script>
+</body>
+
+</html>

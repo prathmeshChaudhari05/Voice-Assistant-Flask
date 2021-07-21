@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>Voice Assistant - About Us</title>
+</head>
+<style>
+	ul.social-network {
+		list-style: none;
+		display: inline;
+		margin-left: 0 !important;
+		padding: 0;
+	}
+
+	ul.social-network li {
+		display: inline;
+		margin: 0 5px;
+	}
+
+
+	/* footer social icons */
+
+	.social-network a.icoFacebook:hover {
+		background-color: #3B5998;
+	}
+
+	.social-network a.icoLinkedin:hover {
+		background-color: #007bb7;
+	}
+
+	.social-network a.icoInstagram:hover {
+		background: #f09433;
+		background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+		background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+		background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+	}
+
+	.social-network a.icoGitHub:hover {
+		background-color: #333;
+	}
+
+	.social-network a.icoFacebook:hover i,
+	.social-network a.icoLinkedin:hover i,
+	.social-network a.icoInstagram:hover i,
+	.social-network a.icoGitHub:hover i {
+		color: #fff;
+	}
+
+	.social-network a.socialIcon:hover,
+	.socialHoverClass {
+		color: #44BCDD;
+	}
+
+	.social-circle li a {
+		display: inline-block;
+		position: relative;
+		margin: 0 auto 0 auto;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		text-align: center;
+		width: 30px;
+		height: 30px;
+		font-size: 15px;
+	}
+
+	.social-circle li i {
+		margin: 0;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	.social-circle li a:hover i,
+	.triggeredHover {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms--transform: rotate(360deg);
+		transform: rotate(360deg);
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		transition: all 0.2s;
+	}
+
+	.social-circle i {
+		color: #595959;
+		-webkit-transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-o-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		transition: all 0.8s;
+	}
+
+	.social-network a {
+		background-color: #e2e2e2;
+	}
+</style>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc93c; color: white; ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="/static/GPN-LogoNew.png" width="60"
+					height="50">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="/"><button
+								class="btn btn-outline-primary">Home</button></a>
+					</li>
+
+					<li class="nav-item">
+						<form action="/command" method="POST">
+							<a class="nav-link " href="/command"><button
+									class="btn btn-outline-primary">Command</button></a>
+						</form>
+						<!--What Commands can be used ?-->
+					</li>
+
+					<li class="nav-item">
+						<form action="/aboutus" method="POST">
+							<a class="nav-link active" href="/aboutus"><button class="btn btn-primary">About
+									Us</button></a>
+						</form>
+						<!--Project Group Info-->
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End of Navbar -->
+	<div style="text-align: center; margin-top: 20px; font-family: Helvetica, Nunito; font-weight:bold;">
+		<h2>Our Team Members</h2>
+	</div>
+	<div class="row row-cols-2 row-cols-md-6 g-0" style="justify-content: center; margin-bottom: 30px;">
+		<div class="card md-2 " style="width: 460px; margin: 20px 00px 00px 20px;">
+			<!-- card mb-4 - higher the number smaller the box -->
+			<div class="row ">
+				<div class="col-md-4">
+					<!-- Text Formating -->
+					<img src="/static/Prathmesh-Photo.jpg"
+						width="140px" height="140px" style="margin-top: 10px; margin-left: 12px; margin-bottom: 10px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Prathmesh Mohan Chaudhari</h5>
+						<p class="card-text"><b>Label:</b> Back-End Developer</p>
+						<p><b>Contact Us Through:</b></p>
+						<!-- Social Media -->
+						<footer class="mainfooter" role="contentinfo"
+							style="position: absolute; bottom: 0; left: 150px; right: 0;">
+							<div class="footer-middle">
+								<div class="container">
+									<div class="row-3" style="padding-bottom: 15px; padding-top: -20px;">
+
+										<ul class="social-network social-circle">
+											<li><a href="https://www.facebook.com/prathmeshChaudhari05/"
+													class="icoFacebook" title="Facebook" target="_blank"><i
+														class="fa fa-facebook"></i></a></li>
+											<li><a href="https://www.linkedin.com/in/prathmeshChaudhari05/"
+													class="icoLinkedin" title="Linkedin" target="_blank"><i
+														class="fa fa-linkedin"></i></a></li>
+											<li><a href="https://www.instagram.com/prathmeshChaudhari05/"
+													class="icoInstagram" title="Instagram" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+											</li>
+											<li><a href="https://github.com/prathmeshChaudhari05" class="icoGitHub"
+													title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-2 " style="width: 460px; margin: 20px 00px 0px 20px;">
+			<!-- card mb-4 - higher the number smaller the box -->
+			<div class="row ">
+				<div class="col-md-4">
+					<!-- Text Formating -->
+					<img src="/static/Kundan-Photo-New.png"
+						width="140px" height="140px" style="margin-top: 10px; margin-left: 10px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Kundan Yashwant Chaudhari</h5>
+						<p class="card-text"><b>Label:</b> Back-End Developer</p>
+						<p><b>Contact Us Through:</b></p>
+						<!-- Social Media -->
+						<footer class="mainfooter" role="contentinfo"
+							style="position: absolute; bottom: 0; left: 150px; right: 0;">
+							<div class="footer-middle">
+								<div class="container">
+									<div class="row-3" style="padding-bottom: 15px; padding-top: -20px;">
+
+										<ul class="social-network social-circle">
+											<li><a href="https://www.facebook.com/kundan.chaudhari.1865"
+													class="icoFacebook" title="Facebook" target="_blank"><i
+														class="fa fa-facebook"></i></a></li>
+											<!-- <li><a href="https://www.linkedin.com/in/prathmeshChaudhari05/"
+													class="icoLinkedin" title="Linkedin" target="_blank"><i
+														class="fa fa-linkedin"></i></a></li> -->
+											<li><a href="https://www.instagram.com/kundan_is_here/"
+													class="icoInstagram" title="Instagram" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+											</li>
+											<!-- <li><a href="https://github.com/prathmeshChaudhari05" class="icoGitHub"
+													title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-2 " style="width: 460px; margin: 20px 00px 0px 20px;">
+			<!-- card mb-4 - higher the number smaller the box -->
+			<div class="row ">
+				<div class="col-md-4">
+					<!-- Text Formating -->
+					<img src="/static/Kunal-Photo-New.png"
+						width="140px" height="140px" style="margin-top: 10px; margin-left: 5px; margin-bottom: 10px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Kunal Shamkant Jadhav</h5>
+						<p class="card-text"><b>Label:</b> Front-End Developer</p>
+						<p><b>Contact Us Through:</b></p>
+						<!-- Social Media -->
+						<footer class="mainfooter" role="contentinfo"
+							style="position: absolute; bottom: 0; left: 150px; right: 0;">
+							<div class="footer-middle">
+								<div class="container">
+									<div class="row-3" style="padding-bottom: 15px; padding-top: -20px;">
+
+										<ul class="social-network social-circle">
+											<li><a href="https://www.facebook.com/profile.php?id=100011675723164"
+													class="icoFacebook" title="Facebook" target="_blank"><i
+														class="fa fa-facebook"></i></a></li>
+											<!-- <li><a href="https://www.linkedin.com/in/prathmeshChaudhari05/"
+													class="icoLinkedin" title="Linkedin" target="_blank"><i
+														class="fa fa-linkedin"></i></a></li> -->
+											<li><a href="https://www.instagram.com/kunaljadhav8308/"
+													class="icoInstagram" title="Instagram" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+											</li>
+											<!-- <li><a href="https://github.com/prathmeshChaudhari05" class="icoGitHub"
+													title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-4 " style="width: 460px; margin: 20px 20px 0px 20px;">
+			<!-- card mb-4 - higher the number smaller the box -->
+			<div class="row ">
+				<div class="col-md-4">
+					<!-- Text Formating -->
+					<img src="/static/Sarthak-Photo-New.png"
+						width="140px" height="140px" style="margin-top: 10px; margin-left: 5px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Sarthak Aravind Rane</h5>
+						<p class="card-text"><b>Label:</b> Front-End Developer</p>
+						<p><b>Contact Us Through:</b></p>
+						<!-- Social Media -->
+						<footer class="mainfooter" role="contentinfo"
+							style="position: absolute; bottom: 0; left: 150px; right: 0;">
+							<div class="footer-middle">
+								<div class="container">
+									<div class="row-3" style="padding-bottom: 15px; padding-top: -20px;">
+
+										<ul class="social-network social-circle">
+											<li><a href="https://www.facebook.com/sarthak.rane.336"
+													class="icoFacebook" title="Facebook" target="_blank"><i
+														class="fa fa-facebook"></i></a></li>
+											<!-- <li><a href="https://www.linkedin.com/in/prathmeshChaudhari05/"
+													class="icoLinkedin" title="Linkedin" target="_blank"><i
+														class="fa fa-linkedin"></i></a></li> -->
+											<li><a href="https://www.instagram.com/_dear_comrade_15/"
+													class="icoInstagram" title="Instagram" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+											</li>
+											<!-- <li><a href="https://github.com/prathmeshChaudhari05" class="icoGitHub"
+													title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-2 " style="width: 460px; margin: 20px 00px 0px 20px;">
+			<!-- card mb-4 - higher the number smaller the box -->
+			<div class="row ">
+				<div class="col-md-4">
+					<!-- Text Formating -->
+					<img src="/static/Niraj-Photo.jpeg"
+						width="140px" height="140px" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Niraj Tulashiram Mali</h5>
+						<p class="card-text"><b>Label:</b> Front-End Developer</p>
+						<p><b>Contact Us Through:</b></p>
+						<!-- Social Media -->
+						<footer class="mainfooter" role="contentinfo"
+							style="position: absolute; bottom: 0; left: 150px; right: 0;">
+							<div class="footer-middle">
+								<div class="container">
+									<div class="row-3" style="padding-bottom: 15px; padding-top: -20px;">
+
+										<ul class="social-network social-circle">
+											<li><a href="https://www.facebook.com/niraj.mali.75641"
+													class="icoFacebook" title="Facebook" target="_blank"><i
+														class="fa fa-facebook"></i></a></li>
+											<!-- <li><a href="https://www.linkedin.com/in/prathmeshChaudhari05/"
+													class="icoLinkedin" title="Linkedin" target="_blank"><i
+														class="fa fa-linkedin"></i></a></li> -->
+											<li><a href="https://www.instagram.com/_niraj_mali_/"
+													class="icoInstagram" title="Instagram" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+											</li>
+											<!-- <li><a href="https://github.com/prathmeshChaudhari05" class="icoGitHub"
+													title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

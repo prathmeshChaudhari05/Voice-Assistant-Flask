@@ -2,6 +2,7 @@ from flask import *
 from demoAI import *
 from pyttsx3 import *
 
+app = Flask(__name__)
 
 @app.route('/')     #default Page
 def demoFun():  
